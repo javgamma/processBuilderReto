@@ -34,8 +34,9 @@ public class Principal {
             ProcessBuilder pb = new ProcessBuilder(ruta);
              */
             // Hacer que el hilo principal duerma el tiempo que nos diga el usuario
-            Thread.sleep(tiempo * 1000); // Convertir segundos a milisegundos
             System.out.println("Esperando "+tiempo+" segundos");
+            Thread.sleep(tiempo * 1000); // Convertir segundos a milisegundos
+            
 
             // Iniciar el proceso
             pb.start();
